@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #14213d;
+  --color-paper: #f3f6fb;
+  --color-line: #d6deec;
+  --color-accent: #2f5bea;
+  --color-accent-dark: #1f43bd;
+  --color-done: #1f8a5b;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
